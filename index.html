@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>An Interactive Designer</title>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Favicons -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Grid CSS -->
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
+    <body>
+        <header class="header">
+            <!-- PC Nav -->
+            <div class="header__container">
+                <div class="header__link-email">
+                    <a href="mailto: hi@arif.interactive" class="header__icon">
+                        <img
+                            src="./assets/img/email-icon.png"
+                            alt="email-icon"
+                            class="email-icon"
+                        />
+                    </a>
+                    <a href="mailto: hi@arif.interactive" class="header__email">
+                        hi@arif.interactive
+                    </a>
+                    <label
+                        for="menu-icon"
+                        class="header__icon grip-lines__icon"
+                    >
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </label>
+                </div>
+                <a href="./" class="logo__page">
+                    <img
+                        src="./assets/img/logo-full.png"
+                        alt="logo-page"
+                        class="logo-img"
+                    />
+                    <img
+                        src="./assets/img/logo-small.png"
+                        alt="logo-page"
+                        class="logo-img-small"
+                    />
+                </a>
+                <nav id="pc-nav" class="pc-navbar">
+                    <ul class="navbar__list media-nav__list">
+                        <li>
+                            <a href="#!" class="navbar__item media-nav__item">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="navbar__item media-nav__item">
+                                Journey
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="navbar__item media-nav__item">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="navbar__item media-nav__item">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Tablet / Mobile header nav-->
+        <header class="media-header">
+            <input type="checkbox" name="" id="menu-icon" hidden />
+
+            <!-- Menu Overlay -->
+            <label for="menu-icon" class="menu-overlay"></label>
+
+            <!-- Menu Content -->
+            <div class="menu-drawer">
+                <a href="./" class="logo__page logo-drawer-img">
+                    <img
+                        src="./assets/img/logo-full.png"
+                        alt="logo-page"
+                        class="logo-img"
+                    />
+                    <img
+                        src="./assets/img/logo-small.png"
+                        alt="logo-page"
+                        class="logo-img-small"
+                    />
+                </a>
+                <nav id="mobile-nav"></nav>
+            </div>
+
+            <script>
+                const pcNav = document.querySelector("#pc-nav");
+                const mobileNav = document.querySelector("#mobile-nav");
+
+                mobileNav.innerHTML = pcNav.innerHTML;
+            </script>
+        </header>
+
+        <div class="mobile-line"></div>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="row hero__row">
+                        <div class="hero__media">
+                            <img
+                                src="./assets/img/hero-img.png"
+                                alt="hero-img"
+                                class="hero-img"
+                            />
+                            <div class="decorators hero-decor-large">
+                                <div class="decor decor-1"></div>
+                                <div class="decor decor-2"></div>
+                                <div class="decor-wrap">
+                                    <div class="decor decor-3"></div>
+                                    <div class="decor decor-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <article class="hero__content">
+                            <h1 class="section-heading h1">
+                                An Interactive Designer
+                            </h1>
+                            <p class="section-desc hero-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                            <div class="hero__link">
+                                <a href="#!" class="btn">Book a Call</a>
+                                <a href="#!" class="hero-link__work">
+                                    My Works
+                                </a>
+                            </div>
+
+                            <div class="hero-link__brand">
+                                <p class="text-link">Follow me on:</p>
+                                <div class="logo__brands">
+                                    <a href="#!">
+                                        <i class="fa-brands fa-behance"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fa-brands fa-dribbble"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="decorators hero-decor">
+                        <div class="decor decor-1"></div>
+                        <div class="decor decor-2"></div>
+                        <div class="decor-wrap">
+                            <div class="decor decor-3"></div>
+                            <div class="decor decor-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clients -->
+            <section class="clients">
+                <div class="container">
+                    <div class="row clients-header__row">
+                        <p class="clients-heading">Meet my recent clients</p>
+                        <div
+                            class="row row-cols-lg-2 row-cols-1 g-0 clients-link__brands"
+                        >
+                            <div class="row">
+                                <div class="col-5">
+                                    <a href="#!" class="link-brand">
+                                        <img
+                                            src="./assets/img/google-img.png"
+                                            alt="google"
+                                            class="brand-img"
+                                        />
+                                    </a>
+                                    <a href="#!" class="brand-name">Google</a>
+                                </div>
+                                <div class="col-7">
+                                    <a href="#!" class="link-brand">
+                                        <img
+                                            src="./assets/img/warner-bros-img.png"
+                                            alt="warner-bros"
+                                            class="brand-img"
+                                        />
+                                    </a>
+                                    <a href="#!" class="brand-name"
+                                        >Warner Bros</a
+                                    >
+                                </div>
+                                <div class="col-5">
+                                    <a href="#!" class="link-brand">
+                                        <img
+                                            src="./assets/img/upwork-img.png"
+                                            alt="upwork"
+                                            class="brand-img"
+                                        />
+                                    </a>
+                                    <a href="#!" class="brand-name">Up Work</a>
+                                </div>
+                                <div class="col-7">
+                                    <a href="#!" class="link-brand">
+                                        <img
+                                            src="./assets/img/creative-cloud-img.png"
+                                            alt="creative-cloud"
+                                            class="brand-img"
+                                        />
+                                    </a>
+                                    <a href="#!" class="brand-name"
+                                        >Creative Cloud</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7">
+                                    <a href="#!" class="link-brand">
+                                        <img
+                                            src="./assets/img/mailchimp-img.png"
+                                            alt="mailchimp"
+                                            class="brand-img"
+                                        />
+                                    </a>
+                                    <a href="#!" class="brand-name"
+                                        >Mailchimp</a
+                                    >
+                                </div>
+                                <div class="col-5">
+                                    <a href="#!" class="link-brand">
+                                        <img
+                                            src="./assets/img/adobe-img.png"
+                                            alt="adobe"
+                                            class="brand-img"
+                                        />
+                                    </a>
+                                    <a href="#!" class="brand-name">Adobe</a>
+                                </div>
+                                <div class="col-7">
+                                    <a href="#!" class="link-brand">
+                                        <img
+                                            src="./assets/img/woocommerce-img.png"
+                                            alt="woocommerce"
+                                            class="brand-img"
+                                        />
+                                    </a>
+                                    <a href="#!" class="brand-name"
+                                        >Woocommerce</a
+                                    >
+                                </div>
+                                <div class="col-5">
+                                    <a href="#!" class="link-brand">
+                                        <img
+                                            src="./assets/img/canva-img.png"
+                                            alt="canva"
+                                            class="brand-img"
+                                        />
+                                    </a>
+                                    <a href="#!" class="brand-name">Canva</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clients__title">
+                        <h2 class="section-heading h2">Specialities</h2>
+                        <p class="section-desc clients-title__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 clients-col__item">
+                            <div class="clients__item">
+                                <a href="#!" class="clients-item__img">
+                                    <img
+                                        src="./assets/img/clients-item-img-01.png"
+                                        alt="Product design"
+                                    />
+                                </a>
+                                <h3>
+                                    <a href="#!" class="section-heading h3">
+                                        Product design
+                                    </a>
+                                </h3>
+                                <p class="section-desc clients-item__desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4 clients-col__item">
+                            <div class="clients__item">
+                                <a href="#!" class="clients-item__img">
+                                    <img
+                                        src="./assets/img/clients-item-img-02.png"
+                                        alt="UI/UX Design"
+                                    />
+                                </a>
+                                <h3>
+                                    <a href="#!" class="section-heading h3">
+                                        UI/UX Design
+                                    </a>
+                                </h3>
+                                <p class="section-desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4 clients-col__item">
+                            <div class="clients__item">
+                                <a href="#!" class="clients-item__img">
+                                    <img
+                                        src="./assets/img/clients-item-img-03.png"
+                                        alt="Interactive design"
+                                    />
+                                </a>
+                                <h3>
+                                    <a href="#!" class="section-heading h3">
+                                        Interactive design
+                                    </a>
+                                </h3>
+                                <p class="section-desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="project">
+                <div class="container project-container">
+                    <div class="row project__title">
+                        <h2 class="section-heading h2 project-heading">
+                            Take a look at <strong>my recent projects</strong>
+                        </h2>
+                        <p class="section-desc project-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </div>
+                    <div class="row row-cols-lg-2 row-cols-1 project__list">
+                        <!-- project 01 -->
+                        <div class="col">
+                            <div class="project__item">
+                                <div class="project-item__content">
+                                    <h3>
+                                        <a href="#!" class="section-heading h3"
+                                            >Wally Website</a
+                                        >
+                                    </h3>
+                                    <p class="section-desc project-item__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="project-item__link">
+                                        Case Study
+                                    </a>
+                                </div>
+                                <a href="#!" class="project-item__img">
+                                    <img
+                                        src="./assets/img/project-img-01.png"
+                                        alt="project-img-01"
+                                    />
+                                </a>
+                                <div
+                                    class="decorators project-decor project-decor-1"
+                                >
+                                    <div class="decor decor-1"></div>
+                                    <div class="decor decor-2"></div>
+                                    <div class="decor-wrap">
+                                        <div class="decor decor-3"></div>
+                                        <div class="decor decor-4"></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="decorators project-decor project-decor-2"
+                                >
+                                    <div class="decor decor-1"></div>
+                                    <div class="decor decor-2"></div>
+                                    <div class="decor-wrap">
+                                        <div class="decor decor-3"></div>
+                                        <div class="decor decor-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- project 02 -->
+                        <div class="col">
+                            <div class="project__item">
+                                <div class="project-item__content">
+                                    <h3>
+                                        <a href="#!" class="section-heading h3"
+                                            >Banking App</a
+                                        >
+                                    </h3>
+                                    <p class="section-desc project-item__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="project-item__link">
+                                        Case Study
+                                    </a>
+                                </div>
+                                <a href="#!" class="project-item__img">
+                                    <img
+                                        src="./assets/img/project-img-02.png"
+                                        alt="project-img-01"
+                                    />
+                                </a>
+                                <div
+                                    class="decorators project-decor project-decor-1"
+                                >
+                                    <div class="decor decor-1"></div>
+                                    <div class="decor decor-2"></div>
+                                    <div class="decor-wrap">
+                                        <div class="decor decor-3"></div>
+                                        <div class="decor decor-4"></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="decorators project-decor project-decor-2"
+                                >
+                                    <div class="decor decor-1"></div>
+                                    <div class="decor decor-2"></div>
+                                    <div class="decor-wrap">
+                                        <div class="decor decor-3"></div>
+                                        <div class="decor decor-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- project 03 -->
+                        <div class="col">
+                            <div class="project__item">
+                                <div class="project-item__content">
+                                    <h3>
+                                        <a href="#!" class="section-heading h3"
+                                            >Web App</a
+                                        >
+                                    </h3>
+                                    <p class="section-desc project-item__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="project-item__link">
+                                        Case Study
+                                    </a>
+                                </div>
+                                <a href="#!" class="project-item__img">
+                                    <img
+                                        src="./assets/img/project-img-03.png"
+                                        alt="project-img-01"
+                                    />
+                                </a>
+                                <div
+                                    class="decorators project-decor project-decor-1"
+                                >
+                                    <div class="decor decor-1"></div>
+                                    <div class="decor decor-2"></div>
+                                    <div class="decor-wrap">
+                                        <div class="decor decor-3"></div>
+                                        <div class="decor decor-4"></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="decorators project-decor project-decor-2"
+                                >
+                                    <div class="decor decor-1"></div>
+                                    <div class="decor decor-2"></div>
+                                    <div class="decor-wrap">
+                                        <div class="decor decor-3"></div>
+                                        <div class="decor decor-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- project 04 -->
+                        <div class="col">
+                            <div class="project__item">
+                                <div class="project-item__content">
+                                    <h3>
+                                        <a href="#!" class="section-heading h3"
+                                            >Oculus Website</a
+                                        >
+                                    </h3>
+                                    <p class="section-desc project-item__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="project-item__link">
+                                        Case Study
+                                    </a>
+                                </div>
+                                <a href="#!" class="project-item__img">
+                                    <img
+                                        src="./assets/img/project-img-04.png"
+                                        alt="project-img-01"
+                                    />
+                                </a>
+                                <div
+                                    class="decorators project-decor project-decor-1"
+                                >
+                                    <div class="decor decor-1"></div>
+                                    <div class="decor decor-2"></div>
+                                    <div class="decor-wrap">
+                                        <div class="decor decor-3"></div>
+                                        <div class="decor decor-4"></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="decorators project-decor project-decor-2"
+                                >
+                                    <div class="decor decor-1"></div>
+                                    <div class="decor decor-2"></div>
+                                    <div class="decor-wrap">
+                                        <div class="decor decor-3"></div>
+                                        <div class="decor decor-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a href="#!" class="btn project__btn">All Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="about">
+                <div class="container">
+                    <article class="row about__title">
+                        <div class="about__sub-title">
+                            <p>Hey,,,,It’s Arif</p>
+                            <img
+                                src="./assets/img/hand-img.png"
+                                alt="hand-img"
+                                class="about-title__img"
+                            />
+                        </div>
+                        <h2 class="section-heading h2">Interactive Designer</h2>
+                        <p class="section-desc about-title__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </article>
+                    <div class="row row-cols-3 about__statistics">
+                        <div class="about-statistic__item">
+                            <div>
+                                <span>08+</span>
+                                <p class="section-desc about-statistic__desc">
+                                    Years Experience
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-statistic__item">
+                            <div>
+                                <span>21+</span>
+                                <p class="section-desc about-statistic__desc">
+                                    Features & Awards
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-statistic__item">
+                            <div>
+                                <span>97%</span>
+                                <p class="section-desc about-statistic__desc">
+                                    Clients<br />
+                                    Rating
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__video">
+                        <video
+                            src="./assets/video/ROSÉ & Bruno Mars - APT. (live from 2024 MAMA AWARDS).mp4"
+                            poster="./assets/img/thumbnail-video.jpg"
+                            class="about-vid"
+                            controls
+                        ></video>
+                        <a href="#!" class="btn about-btn">intro video</a>
+                        <div class="play__btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <article class="about-title__bottom">
+                        <div class="about-bottom__heading">
+                            <h2 class="section-heading h2">What people says</h2>
+                            <div class="section-desc about-title-bt__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 about-bt__list">
+                            <div class="col">
+                                <div class="about-bt-content__inner">
+                                    <blockquote
+                                        class="section-desc about-bt-content"
+                                    >
+                                        “Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa.”
+                                    </blockquote>
+                                    <div class="about-bt__reviewer">
+                                        <div class="about-bt-reviewer__info">
+                                            <figure
+                                                class="about-reviewer__avatar"
+                                            >
+                                                <img
+                                                    src="./assets/img/about-reviewer-avatar.png"
+                                                    alt="reviewer-avatar"
+                                                    class="reviewer-avatar"
+                                                />
+                                            </figure>
+                                            <p class="about-reviewer__name">
+                                                Joe Elia
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="section-desc about-reviewer__jobs"
+                                        >
+                                            User Interface Design at PCL Lab
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="about-bt-content__inner">
+                                    <blockquote
+                                        class="section-desc about-bt-content"
+                                    >
+                                        “Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa.”
+                                    </blockquote>
+                                    <div class="about-bt__reviewer">
+                                        <div class="about-bt-reviewer__info">
+                                            <figure
+                                                class="about-reviewer__avatar"
+                                            >
+                                                <img
+                                                    src="./assets/img/about-reviewer-avatar.png"
+                                                    alt="reviewer-avatar"
+                                                    class="reviewer-avatar"
+                                                />
+                                            </figure>
+                                            <p class="about-reviewer__name">
+                                                Joe Elia
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="section-desc about-reviewer__jobs"
+                                        >
+                                            User Interface Design at PCL Lab
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="about-bt-content__inner">
+                                    <blockquote
+                                        class="section-desc about-bt-content"
+                                    >
+                                        “Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa.”
+                                    </blockquote>
+                                    <div class="about-bt__reviewer">
+                                        <div class="about-bt-reviewer__info">
+                                            <figure
+                                                class="about-reviewer__avatar"
+                                            >
+                                                <img
+                                                    src="./assets/img/about-reviewer-avatar.png"
+                                                    alt="reviewer-avatar"
+                                                    class="reviewer-avatar"
+                                                />
+                                            </figure>
+                                            <p class="about-reviewer__name">
+                                                Joe Elia
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="section-desc about-reviewer__jobs"
+                                        >
+                                            User Interface Design at PCL Lab
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="decorators about-decor about-decor-1">
+                    <div class="decor decor-1"></div>
+                    <div class="decor decor-2"></div>
+                    <div class="decor-wrap">
+                        <div class="decor decor-3"></div>
+                        <div class="decor decor-4"></div>
+                    </div>
+                </div>
+                <div class="decorators about-decor about-decor-2">
+                    <div class="decor decor-1"></div>
+                    <div class="decor decor-2"></div>
+                    <div class="decor-wrap">
+                        <div class="decor decor-3"></div>
+                        <div class="decor decor-4"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Question -->
+            <section class="question">
+                <div class="container question__container">
+                    <h2 class="section-heading h2 question-heading">
+                        A few questions <br />
+                        clients normally ask me
+                    </h2>
+                    <div class="row row-cols-1">
+                        <!-- Col 01 -->
+                        <div class="col">
+                            <div class="question__inner">
+                                <input
+                                    type="radio"
+                                    name="more-answer"
+                                    id="hourly-rate"
+                                    hidden
+                                />
+                                <label
+                                    for="hourly-rate"
+                                    class="question__label"
+                                >
+                                    <div class="label__text">
+                                        <p class="label__answer">
+                                            What is your hourly rate?
+                                        </p>
+                                        <p class="section-desc label-desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                    <div class="label__icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Col 02 -->
+                        <div class="col">
+                            <div class="question__inner">
+                                <input
+                                    type="radio"
+                                    name="more-answer"
+                                    id="type-of-projects"
+                                    hidden
+                                />
+                                <label
+                                    for="type-of-projects"
+                                    class="question__label"
+                                >
+                                    <div class="label__text">
+                                        <p class="label__answer">
+                                            What type of projects do you take
+                                            on?
+                                        </p>
+                                        <p class="section-desc label-desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                    <div class="label__icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Col 03 -->
+                        <div class="col">
+                            <div class="question__inner">
+                                <input
+                                    type="radio"
+                                    name="more-answer"
+                                    id="charge-for-projects"
+                                    hidden
+                                />
+                                <label
+                                    for="charge-for-projects"
+                                    class="question__label"
+                                >
+                                    <div class="label__text">
+                                        <p class="label__answer">
+                                            How do you charge for projects ?
+                                        </p>
+                                        <p class="section-desc label-desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                    <div class="label__icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Col 04 -->
+                        <div class="col">
+                            <div class="question__inner">
+                                <input
+                                    type="radio"
+                                    name="more-answer"
+                                    id="time-zone-work-in"
+                                    hidden
+                                />
+                                <label
+                                    for="time-zone-work-in"
+                                    class="question__label"
+                                >
+                                    <div class="label__text">
+                                        <p class="label__answer">
+                                            What time-zone do you work in?
+                                        </p>
+                                        <p class="section-desc label-desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                    <div class="label__icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Col 05 -->
+                        <div class="col">
+                            <div class="question__inner">
+                                <input
+                                    type="radio"
+                                    name="more-answer"
+                                    id="communicate"
+                                    hidden
+                                />
+                                <label
+                                    for="communicate"
+                                    class="question__label"
+                                >
+                                    <div class="label__text">
+                                        <p class="label__answer">
+                                            How often can we communicate?
+                                        </p>
+                                        <p class="section-desc label-desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                    <div class="label__icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery -->
+            <section class="gallery">
+                <div class="container">
+                    <div class="row gallery__title">
+                        <h2 class="section-heading h2">My atmosphere</h2>
+                        <p class="section-desc gallery__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <a href="#!" class="gallery__link">@interaction_arif</a>
+                    </div>
+                    <div class="row row-cols-3">
+                        <div class="col-md-4 col-12">
+                            <div class="inner">
+                                <img
+                                    src="./assets/img/gallery-img-1.avif"
+                                    alt="gallery-img-1"
+                                    class="gallery-img"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="inner">
+                                <img
+                                    src="./assets/img/gallery-img-2.avif"
+                                    alt="gallery-img-2"
+                                    class="gallery-img"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="inner">
+                                <img
+                                    src="./assets/img/gallery-img-3.avif"
+                                    alt="gallery-img-3"
+                                    class="gallery-img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots gallery__dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to action -->
+            <section class="cta">
+                <div class="cta__container">
+                    <div class="cta__content">
+                        <img
+                            src="./assets/img/cta-img.png"
+                            alt="cta-img"
+                            class="cta-img"
+                        />
+                        <h2 class="section-heading h2 cta-heading">
+                            Got a project? Let’s talk
+                        </h2>
+                        <p class="section-desc cta-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <a href="#!" class="btn cta-btn">Book a Call</a>
+                    </div>
+                    <div class="decorators cta-decor cta-decor-1">
+                        <div class="decor decor-1"></div>
+                        <div class="decor decor-2"></div>
+                        <div class="decor-wrap">
+                            <div class="decor decor-3"></div>
+                            <div class="decor decor-4"></div>
+                        </div>
+                    </div>
+                    <div class="decorators cta-decor cta-decor-2">
+                        <div class="decor decor-1"></div>
+                        <div class="decor decor-2"></div>
+                        <div class="decor-wrap">
+                            <div class="decor decor-3"></div>
+                            <div class="decor decor-4"></div>
+                        </div>
+                    </div>
+                    <div class="decorators cta-decor cta-decor-3">
+                        <div class="decor decor-1"></div>
+                        <div class="decor decor-2"></div>
+                        <div class="decor-wrap">
+                            <div class="decor decor-3"></div>
+                            <div class="decor decor-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="header__container footer__inner">
+                    <div class="header__link-email">
+                        <a
+                            href="mailto: hi@arif.interactive"
+                            class="header__icon"
+                        >
+                            <img
+                                src="./assets/img/email-icon.png"
+                                alt="email-icon"
+                                class="email-icon"
+                            />
+                        </a>
+                        <a
+                            href="mailto: hi@arif.interactive"
+                            class="header__email"
+                        >
+                            hi@arif.interactive
+                        </a>
+                    </div>
+                    <a href="./" class="logo__page">
+                        <img
+                            src="./assets/img/logo-full.png"
+                            alt="logo-page"
+                            class="logo-img"
+                        />
+                    </a>
+                    <nav>
+                        <ul class="navbar__list">
+                            <li>
+                                <a
+                                    href="#!"
+                                    class="navbar__item media-nav__item"
+                                >
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#!"
+                                    class="navbar__item media-nav__item"
+                                >
+                                    Journey
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#!"
+                                    class="navbar__item media-nav__item"
+                                >
+                                    Service
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#!"
+                                    class="navbar__item media-nav__item"
+                                >
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-separate"></div>
+                <div class="footer__bt">
+                    <p class="footer__copyright">
+                        ©interactiveArif 2021. All rights reserved.
+                    </p>
+                    <div class="footer__link">
+                        <a href="#!" class="privacy-policy">Privacy Policy</a>
+                        <a href="#!" class="terms-of-conditions">
+                            Terms of Conditions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
