@@ -144,7 +144,10 @@
                 <nav id="pc-nav" class="pc-navbar">
                     <ul class="navbar__list media-nav__list">
                         <li>
-                            <a href="#!" class="navbar__item media-nav__item">
+                            <a
+                                href="#project"
+                                class="navbar__item media-nav__item"
+                            >
                                 Projects
                             </a>
                         </li>
@@ -166,38 +169,42 @@
                     </ul>
                 </nav>
             </div>
-        </header>
+            <!-- Tablet / Mobile header nav-->
+            <div class="media-header">
+                <input type="checkbox" name="" id="menu-icon" hidden />
 
-        <!-- Tablet / Mobile header nav-->
-        <header class="media-header">
-            <input type="checkbox" name="" id="menu-icon" hidden />
+                <!-- Menu Overlay -->
+                <label for="menu-icon" class="menu-overlay"></label>
 
-            <!-- Menu Overlay -->
-            <label for="menu-icon" class="menu-overlay"></label>
+                <!-- Menu Content -->
+                <div class="menu-drawer">
+                    <div class="menu-drawer__inner">
+                        <a href="./" class="logo__page logo-drawer-img">
+                            <img
+                                src="./assets/img/logo-full.png"
+                                alt="logo-page"
+                                class="logo-img"
+                            />
+                            <img
+                                src="./assets/img/logo-small.png"
+                                alt="logo-page"
+                                class="logo-img-small"
+                            />
+                        </a>
+                        <label for="menu-icon" class="close-icon">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+                    <nav id="mobile-nav"></nav>
+                </div>
 
-            <!-- Menu Content -->
-            <div class="menu-drawer">
-                <a href="./" class="logo__page logo-drawer-img">
-                    <img
-                        src="./assets/img/logo-full.png"
-                        alt="logo-page"
-                        class="logo-img"
-                    />
-                    <img
-                        src="./assets/img/logo-small.png"
-                        alt="logo-page"
-                        class="logo-img-small"
-                    />
-                </a>
-                <nav id="mobile-nav"></nav>
+                <script>
+                    const pcNav = document.querySelector("#pc-nav");
+                    const mobileNav = document.querySelector("#mobile-nav");
+
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                </script>
             </div>
-
-            <script>
-                const pcNav = document.querySelector("#pc-nav");
-                const mobileNav = document.querySelector("#mobile-nav");
-
-                mobileNav.innerHTML = pcNav.innerHTML;
-            </script>
         </header>
 
         <div class="mobile-line"></div>
@@ -443,7 +450,7 @@
             </section>
 
             <!-- Projects -->
-            <section class="project">
+            <section id="project" class="project">
                 <div class="container project-container">
                     <div class="row project__title">
                         <h2 class="section-heading h2 project-heading">
@@ -1147,7 +1154,7 @@
                         <ul class="navbar__list">
                             <li>
                                 <a
-                                    href="#!"
+                                    href="#project"
                                     class="navbar__item media-nav__item"
                                 >
                                     Projects
