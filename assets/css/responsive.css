@@ -39,7 +39,7 @@
     }
 
     .menu-overlay {
-        position: absolute;
+        position: fixed;
         inset: 0;
         z-index: 1;
         background-color: rgba(0, 0, 0, 0.3);
@@ -49,8 +49,8 @@
     }
 
     .menu-drawer {
-        position: absolute;
-        inset: 0 40% -100vh 0;
+        position: fixed;
+        inset: 0 40% 0 0;
         z-index: 2;
         background-color: #fff;
         transform: translateX(-100%);
@@ -66,7 +66,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 25px;
+        margin-top: 10px;
         margin-right: 10px;
         width: 40px;
         height: 40px;
@@ -143,8 +143,9 @@
     /* Clients */
 
     .clients {
-        margin-top: 120px;
+        margin-top: 0;
         margin-bottom: 120px;
+        padding-top: 120px;
     }
 
     .clients .container {
@@ -179,10 +180,6 @@
 
     .clients-link__brands .row:first-child [class^="col-"] {
         --column-number: 6;
-    }
-
-    .clients-link__brands [class^="col-"] .brand-name {
-        font-size: 1.8rem;
     }
 
     .clients__title {
@@ -311,7 +308,8 @@
 
     /* Gallery */
     .gallery {
-        margin-top: 120px;
+        margin-top: 0;
+        padding-top: 120px;
     }
 
     .gallery__desc {
@@ -378,7 +376,7 @@
     }
 
     .footer .navbar__item {
-        padding: 19px;
+        padding: 20px;
         font-size: 1.6rem;
     }
 
@@ -403,6 +401,10 @@
         order: 1;
         justify-content: center;
         border-bottom: 1px solid #0c072033;
+    }
+
+    .footer .navbar__item {
+        padding: 20px 17px;
     }
 }
 
@@ -773,9 +775,21 @@
     .cta-decor-1 .decor {
         height: 58px;
     }
+}
+
+/* Mobile ip 6/7/8 Super small */
+@media (max-width: 375.98px) {
+    /* Clients */
+    .clients-link__brands .row:first-child [class^="col-5"] {
+        --column-number: 7;
+    }
+
+    .clients-link__brands .row:first-child [class^="col-7"] {
+        --column-number: 5;
+    }
 
     /* Footer */
     .footer .navbar__list {
-        column-gap: 0;
+        column-gap: 1px;
     }
 }
